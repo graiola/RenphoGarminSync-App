@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<DebugSymbols>False</DebugSymbols>
+		<DebugType>None</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+		<PackageReference Include="Polly" Version="8.4.2" />
+		<PackageReference Include="RestSharp" Version="112.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\RenphoGarminSync.Renpho.Auth\RenphoGarminSync.Renpho.Auth.csproj" />
+		<ProjectReference Include="..\RenphoGarminSync.Renpho.Shared\RenphoGarminSync.Renpho.Shared.csproj" />
+	</ItemGroup>
+
+</Project>
