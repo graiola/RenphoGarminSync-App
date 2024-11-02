@@ -18,14 +18,14 @@ For the simplest use-case (Garmin without Multi-Factor Authentication enabled) i
 ```console
 rgs sync --gu <GarminUsername> --gpw <GarminPassword> --ru <RenphoUsername> --rpw <RenphoPassword>
 ```
-![Sync exampole](assets/sync.svg)
+![Sync example](assets/sync.svg)
 
 if you have MFA enabled, you will need to preauthorize your garmin account and pass the MFA code to the application, afterwards you should be able to easily use the `rgs sync` command.
 ```console
 rgs auth garmin --u <GarminUsername> --pw <GarminPassword>
 rgs auth garmin --u <GarminUsername> --mfa <MFA Code>
 ```
-![Sync exampole](assets/mfa.svg)
+![Sync example](assets/mfa.svg)
 
 # Commands
 
@@ -78,7 +78,7 @@ Check and configure Renpho authorization.
 
 # FAQ
 ## Are the password stored anywhere?
-Nope, the only things thare are currently persisted are:
+Nope, the only things that are currently persisted are:
 - Garmin authorization tokens (stored encrypted)
 - List of already handled measurements from Renpho
 - Generated .fit files
