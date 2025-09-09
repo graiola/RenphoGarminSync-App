@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-android</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Exe</OutputType>
+    <UseMaui>true</UseMaui>
+    <ApplicationTitle>RGS Sync</ApplicationTitle>
+    <ApplicationId>com.example.rgs</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.0" />
+  </ItemGroup>
+
+  <!-- If you vendor or submodule the CLI libs, reference them here -->
+  <!-- <ProjectReference Include="..\RenphoGarminSync-CLI\RenphoGarminSync.Renpho.Api\RenphoGarminSync.Renpho.Api.csproj" /> -->
+</Project>
+
