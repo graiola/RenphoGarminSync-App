@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             x:Class="RGS.App.Pages.HomePage"
-             Title="RGS Sync">
+<ContentPage
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="RGS.App.Pages.HomePage"
+  Title="RGS Sync">
   <ScrollView>
     <VerticalStackLayout Padding="16" Spacing="12">
-      <Label Text="Unofficial Renpho → Garmin sync"
-             FontAttributes="Bold" />
+      <Label Text="Unofficial Renpho → Garmin sync" FontAttributes="Bold" />
       <Button Text="Connect Renpho" Command="{Binding ConnectRenphoCmd}" />
       <Button Text="Connect Garmin" Command="{Binding ConnectGarminCmd}" />
       <Button Text="Sync Now (Foreground)" Command="{Binding SyncNowCmd}" />

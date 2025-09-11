@@ -11,12 +11,14 @@
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <PublishTrimmed>false</PublishTrimmed>
+    <AndroidManifest>Platforms/Android/AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Pacchetti MAUI espliciti (usa la versione del workload installato) -->
+    <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+    <!-- Tooling MVVM, opzionale -->
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-    <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.0" />
   </ItemGroup>
 
   <!-- If you vendor or submodule the CLI libs, reference them here -->
